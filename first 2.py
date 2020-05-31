@@ -112,3 +112,7 @@ print(master.get_student_band_color('Donatello'))
 print(master.get_student_weapon('Donatello'))
 print(master.get_student_band_color('Raphael'))
 print(master.get_student_weapon('Raphael'))
+
+isinstance(Splinter.students['Leonardo'], NinjaTurtle)
+
+issubclass(Leonardo, NinjaTurtle)
