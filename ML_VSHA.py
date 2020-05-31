@@ -38,4 +38,13 @@ while i <= n:
     i = i + 1    
 print("Минут на солнце: %i" %m)
 
+#задание 5
+name = str(input("введите имя:"))
+surname = str(input("введите фамилию:"))
+print("%s %s, добро пожаловать" % (name, surname))
 
+#задание 6
+h = float(input("введите рост в метрах:"))
+m = float(input("введите вес в кг:"))
+BMI = m / h**2
+print("Индекс массы тела: %.2f" %BMI)
