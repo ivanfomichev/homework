@@ -104,8 +104,8 @@ class Splinter:
 
 
 master = Splinter(names, ninjas)
-print(master.get_student_band_color(1))
-print(master.get_student_weapon(2))
+print(master.get_student_band_color('Leonardo'))
+print(master.get_student_weapon('Leonardo'))
 print(master.get_student_band_color('Michelangelo'))
 print(master.get_student_weapon('Michelangelo'))
 print(master.get_student_band_color('Donatello'))
