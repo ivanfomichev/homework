@@ -66,3 +66,16 @@ master.get_student_band_color('Donatello', names, ninjas)
 master.get_student_weapon('Donatello', names, ninjas)
 master.get_student_band_color('Raphael', names, ninjas)
 master.get_student_weapon('Raphael', names, ninjas)
+
+import re
+
+passwordText = 'fBt4!asd'
+
+# Не менее 1 цифры, не менее 1 буквы, не менее 1 большой буквы и без пробелов
+charRegex = re.compile(r'(?=^.{8,}$)(^(?=.*\d)(?=.*[a-z])(?=.*[^\w\s])(?=.*[A-Z])(?!.*\s).*).*$')  
+
+''' Сейчас мы их проверим...'''
+if charRegex.match(passwordText) == None:  
+    print('FAIL')
+else:  
+    print('Your password is strong. Good job!')
